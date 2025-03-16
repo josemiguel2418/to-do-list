@@ -1,0 +1,102 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+body{
+    background: linear-gradient(to right,#9852df 60%,#793bb8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+button{
+    cursor: pointer;
+}
+
+.list-container{
+    min-height: 60vh;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 5px;
+    
+}
+
+.list-form,.list-tasks{
+    width: 100%;
+    padding: 2.7rem;
+    border-radius: 10px;
+}
+
+.list-form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-form{
+    width: 60%;
+    padding:10px;
+    margin-right: 5%;
+    height: 40px;
+    font-size: 1rem;
+}
+
+.list-form button{
+    background:linear-gradient(to right,#9852df 60%,#793bb8); 
+    border:none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 30%;
+    padding:10px;
+    height: 40px;   
+}
+
+.list-tasks{
+    margin-bottom: initial;
+    padding-top:0;
+}
+
+.list-task{
+    border-bottom: thin solid #cac5c5;
+    padding-bottom:10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.is-active{
+    background-color: #d3d3d3;
+}
+
+.list-task-info{
+    font-size: 1.05rem;
+    font-family: arial;
+    width: 400px;
+}
+
+.list-task button{
+    border:none;
+    height: 35px;
+    width: 35px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn-editar{
+    background-color: #48d1cc;
+    margin-right: 8px;
+}
+
+.btn-borrar{
+    background-color: #f74a4a;
+}
